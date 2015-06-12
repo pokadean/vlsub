@@ -59,7 +59,7 @@ local options = {
   },
   translation = {
     int_all = 'All',
-    int_descr = 'Download subtitles from OpenSubtitles.org',
+    int_descr = 'Download subtitles from addic7ed.com',
     int_research = 'Research',
     int_config = 'Config',
     int_configuration = 'Configuration',
@@ -93,8 +93,8 @@ local options = {
     int_os_password = 'Password',
     int_help_mess =[[
       Download subtitles from 
-      <a href='http://www.opensubtitles.org/'>
-      opensubtitles.org
+      <a href='http://addic7ed.com/'>
+      addic7ed.com
       </a> and display them while watching a video.<br>
       <br>
       <b><u>Usage:</u></b><br>
@@ -136,7 +136,7 @@ local options = {
       <strong>VLSub is not working with Vlc 2.1.x on 
       any platform</strong>
       because the lua "net" module needed to interact 
-      with opensubtitles has been 
+      with addic7ed has been 
       removed in this release for the extensions.
       <br>
       <strong>Works with Vlc 2.2 on mac and linux.</strong>
@@ -326,10 +326,10 @@ local select_conf = {} -- Drop down widget / option table association
 
 function descriptor()
   return { 
-    title = "VLsub 0.9.13",
-    version = "0.9.13",
+    title = "VLsub 0.9.14",
+    version = "0.9.14",
     author = "exebetche",
-    url = 'http://www.opensubtitles.org/',
+    url = 'http://addic7ed.com/',
     shortdesc = "VLsub";
     description = options.translation.int_descr,
     capabilities = {"menu", "input-listener" }
@@ -1149,7 +1149,7 @@ openSub = {
   itemStore = nil,
   actionLabel = "",
   conf = {
-    url = "http://api.opensubtitles.org/xml-rpc",
+    url = "http://api.addic7ed.com/xml-rpc",
     path = nil,
     userAgentHTTP = "VLSub",
     useragent = "VLSub 0.9",
